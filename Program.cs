@@ -162,13 +162,17 @@ namespace TheExclusiveBot
             bool userGotPoints = false;
             foreach (var word in words)
             {
+                Match m = Regex.Match(word, @"^(.*?(cute|cutie|qt))+.*?");
+                
+               // m.Groups[1].Value;
+                //m.Groups[1].Captures.Count;
                 //Use regex to check the word for cute or cutie
-                Regex checkCute = new Regex("cute");
-                Regex checkCutie = new Regex("cutie");
+                //Regex checkCute = new Regex("cute");
+                //Regex checkCutie = new Regex("cutie");
                 //Array with the commands so they dont count on the cute meter.
                 string[] commands = { ":!mycutes", ":!helpcute", ":!cutecommands", ":!cutetop5" };
-
-                if ((checkCute.IsMatch(word.ToLower()) || checkCutie.IsMatch(word.ToLower())) && commands.Contains(word.ToLower()) == false)
+                //(checkCute.IsMatch(word.ToLower()) || checkCutie.IsMatch(word.ToLower()))
+                if ( m.Success && commands.Contains(word.ToLower()) == false)
                 {
                     //Check the list for the username. If it exist take the usernames points else make it
                     int i = 0;
@@ -194,8 +198,8 @@ namespace TheExclusiveBot
                         Console.WriteLine("no");
                     }
                     Console.WriteLine(word);
-                    checkWordCountTotal++;
-                    checkWordCountCurrent++;
+                    checkWordCountTotal += m.Groups[1].Captures.Count;
+                    checkWordCountCurrent += m.Groups[1].Captures.Count;
                     userPoints++;
                     cuteYes = true;
                 }
@@ -215,7 +219,7 @@ namespace TheExclusiveBot
         /// <param name="message">The message from the Twitch Chat</param>
         /// <param name="maybeCommand"></param>
         /// <returns></returns>
-        static bool checkCommand(string message, out string maybeCommand)
+        static bool checkCommand(string message, out string? maybeCommand)
         {
             //Split the message at : and check if it became more than 2 segments otherwise stop the function
             string[] splitMessage = message.Split(":");

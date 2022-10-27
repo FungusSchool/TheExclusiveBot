@@ -1,0 +1,15 @@
+C:\MyCode\TheExclusiveBot\bin\Debug\net6.0\TheExclusiveBot.exe
+C:\MyCode\TheExclusiveBot\bin\Debug\net6.0\TheExclusiveBot.deps.json
+C:\MyCode\TheExclusiveBot\bin\Debug\net6.0\TheExclusiveBot.runtimeconfig.json
+C:\MyCode\TheExclusiveBot\bin\Debug\net6.0\TheExclusiveBot.dll
+C:\MyCode\TheExclusiveBot\bin\Debug\net6.0\TheExclusiveBot.pdb
+C:\MyCode\TheExclusiveBot\obj\Debug\net6.0\TheExclusiveBot.csproj.AssemblyReference.cache
+C:\MyCode\TheExclusiveBot\obj\Debug\net6.0\TheExclusiveBot.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyCode\TheExclusiveBot\obj\Debug\net6.0\TheExclusiveBot.AssemblyInfoInputs.cache
+C:\MyCode\TheExclusiveBot\obj\Debug\net6.0\TheExclusiveBot.AssemblyInfo.cs
+C:\MyCode\TheExclusiveBot\obj\Debug\net6.0\TheExclusiveBot.csproj.CoreCompileInputs.cache
+C:\MyCode\TheExclusiveBot\obj\Debug\net6.0\TheExclusiveBot.dll
+C:\MyCode\TheExclusiveBot\obj\Debug\net6.0\refint\TheExclusiveBot.dll
+C:\MyCode\TheExclusiveBot\obj\Debug\net6.0\TheExclusiveBot.pdb
+C:\MyCode\TheExclusiveBot\obj\Debug\net6.0\TheExclusiveBot.genruntimeconfig.cache
+C:\MyCode\TheExclusiveBot\obj\Debug\net6.0\ref\TheExclusiveBot.dll

@@ -1,0 +1,5 @@
+C:\MyCode\TheExclusiveBot\obj\Debug\net5.0\TheExclusiveBot.csproj.AssemblyReference.cache
+C:\MyCode\TheExclusiveBot\obj\Debug\net5.0\TheExclusiveBot.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyCode\TheExclusiveBot\obj\Debug\net5.0\TheExclusiveBot.AssemblyInfoInputs.cache
+C:\MyCode\TheExclusiveBot\obj\Debug\net5.0\TheExclusiveBot.AssemblyInfo.cs
+C:\MyCode\TheExclusiveBot\obj\Debug\net5.0\TheExclusiveBot.csproj.CoreCompileInputs.cache
