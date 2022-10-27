@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net6.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\strindin.linus\\.nuget\\packages\\": {}
@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MyCode\\TheExclusiveBot\\Extra_for_morneTwitchBot2.csproj",
-      "projectName": "Extra_for_morneTwitchBot2",
-      "projectPath": "C:\\MyCode\\TheExclusiveBot\\Extra_for_morneTwitchBot2.csproj",
+      "projectUniqueName": "C:\\MyCode\\TheExclusiveBot\\TheExclusiveBot.csproj",
+      "projectName": "TheExclusiveBot",
+      "projectPath": "C:\\MyCode\\TheExclusiveBot\\TheExclusiveBot.csproj",
       "packagesPath": "C:\\Users\\strindin.linus\\.nuget\\packages\\",
       "outputPath": "C:\\MyCode\\TheExclusiveBot\\obj\\",
       "projectStyle": "PackageReference",
@@ -23,14 +23,14 @@
         "C:\\Users\\strindin.linus\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "net6.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {}
         }
       },
@@ -41,8 +41,8 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "imports": [
           "net461",
           "net462",
@@ -54,12 +54,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.17, 5.0.17]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
