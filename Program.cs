@@ -162,7 +162,7 @@ namespace TheExclusiveBot
             bool userGotPoints = false;
             foreach (var word in words)
             {
-                Match m = Regex.Match(word, @"^(.*?(cute|cutie|qt))+.*?");
+                Match m = Regex.Match(word.ToLower(), @"^(.*?(cute|cutie|qt))+.*?");
                 
                // m.Groups[1].Value;
                 //m.Groups[1].Captures.Count;
