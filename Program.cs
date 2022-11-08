@@ -77,7 +77,7 @@ namespace TheExclusiveBot
                 File.WriteAllLines(@"Count.txt", countFileList);
 
                 //Check if the msesage starts with a ! then check if its a viable command
-                string maybeCommand;
+                string? maybeCommand;
                 if (checkCommand(message, out maybeCommand) == true)
                 {
                     if (maybeCommand != null)
@@ -162,17 +162,18 @@ namespace TheExclusiveBot
             bool userGotPoints = false;
             foreach (var word in words)
             {
-                Match m = Regex.Match(word.ToLower(), @"^(.*?(cute|cutie|qt))+.*?");
-                
-               // m.Groups[1].Value;
-                //m.Groups[1].Captures.Count;
                 //Use regex to check the word for cute or cutie
+                Match m = Regex.Match(word.ToLower(), @"^(.*?(cute|cutie|qt))+.*?");
+
+                // m.Groups[1].Value;
+                //m.Groups[1].Captures.Count;
                 //Regex checkCute = new Regex("cute");
                 //Regex checkCutie = new Regex("cutie");
                 //Array with the commands so they dont count on the cute meter.
                 string[] commands = { ":!mycutes", ":!helpcute", ":!cutecommands", ":!cutetop5" };
                 //(checkCute.IsMatch(word.ToLower()) || checkCutie.IsMatch(word.ToLower()))
-                if ( m.Success && commands.Contains(word.ToLower()) == false)
+                //Checks if the match was true and if it was not from a command
+                if (m.Success && commands.Contains(word.ToLower()) == false)
                 {
                     //Check the list for the username. If it exist take the usernames points else make it
                     int i = 0;
